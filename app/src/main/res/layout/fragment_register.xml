@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:background="#fff"
+    android:gravity="center">
+
+    <EditText
+        android:id="@+id/fullname"
+        android:hint="Họ và tên"
+        android:inputType="text"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColor="#4CAF50"
+        android:textColorHint="#2196F3"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/gmail"
+        android:hint="Gmail đăng ký"
+        android:inputType="text"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColor="#4CAF50"
+        android:textColorHint="#2196F3"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/username_rigister"
+        android:hint="Tên đăng nhập"
+        android:inputType="text"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColor="#4CAF50"
+        android:textColorHint="#2196F3"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/password_rigister"
+        android:hint="Mật khẩu"
+        android:inputType="text"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColor="#4CAF50"
+        android:textColorHint="#2196F3"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/re_pasword_rigister"
+        android:hint="Nhập lại mật khẩu"
+        android:inputType="text"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColor="#4CAF50"
+        android:textColorHint="#2196F3"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btn_register"
+        android:background="@drawable/shqpe_custom_btn_register"
+        android:text="Đăng ký"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
