@@ -6,6 +6,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.example.notesonline.ForgetPw.ForgetPasswordActivity;
 import com.example.notesonline.Register.RegisterActivity;
 
 import butterknife.BindView;
@@ -40,6 +41,16 @@ public class LoginActivity extends BaseActivity {
     @Override
     protected void populateData() {
         Register();
+        ForgetPw();
+    }
+
+    private void ForgetPw() {
+        forget_pw.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(LoginActivity.this, ForgetPasswordActivity.class));
+            }
+        });
     }
 
     private void Register() {
@@ -50,6 +61,7 @@ public class LoginActivity extends BaseActivity {
             }
         });
     }
+
 
 
 }
