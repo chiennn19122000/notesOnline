@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/content"
+        android:text="skjhskjdhkjhdkjahdkjashdkjahdkjashdk"
+        android:layout_marginStart="@dimen/_40sdp"
+        android:layout_marginEnd="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:textSize="@dimen/_20sdp"
+        android:textColor="#000"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/verification_code"
+        android:inputType="number"
+        android:hint="  Nhập mã kích hoạt"
+        android:textColorHint="#CDDC39"
+        android:textColor="#000"
+        android:layout_marginStart="@dimen/_50sdp"
+        android:layout_marginEnd="@dimen/_50sdp"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/activate"
+        android:text="Kích hoạt"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:textColor="#E91E63"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:background="@drawable/shqpe_custom_btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

@@ -1,23 +1,16 @@
 package com.example.notesonline;
 
-import android.text.Editable;
+import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
-
-import com.example.notesonline.fragment.RegisterFragment;
+import com.example.notesonline.Register.RegisterActivity;
 
 import butterknife.BindView;
 
-public class MainActivity extends BaseActivity {
-    @BindView(R.id.layout_login)
-    RelativeLayout loginLayout;
-
+public class LoginActivity extends BaseActivity {
     @BindView(R.id.username)
     EditText username;
 
@@ -31,7 +24,8 @@ public class MainActivity extends BaseActivity {
     TextView register;
 
     @BindView(R.id.forget_pw)
-    TextView forgetPwd;
+    TextView forget_pw;
+
     @Override
     protected int getLayoutRes() {
         return R.layout.activity_login;
@@ -47,23 +41,15 @@ public class MainActivity extends BaseActivity {
     protected void populateData() {
         Register();
     }
-    private void Register()
-    {
+
+    private void Register() {
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                fragmentRegister();
+                startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
             }
         });
     }
-    private void fragmentRegister()
-    {
-        FragmentManager fm = getSupportFragmentManager();
 
-        FragmentTransaction ft_add = fm.beginTransaction();
-        ft_add.add(R.id.layout_login,new RegisterFragment());
-        ft_add.addToBackStack(null);
-        ft_add.commit();
-    }
+
 }
